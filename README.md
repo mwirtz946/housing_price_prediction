@@ -1,25 +1,53 @@
-# Kings County Housing Bake-off
+# Kings County Housing Price Predictions
 
-For many machine learning projects, the goal is to create a model that best predicts the target variable on unseen data. In order to develop a model, we have a general process, but there is a lot of flexibility within this process. Even when working with the same data, people can produce different models by engineering different features, or by selecting certain features to include in the models. **There is no one correct way to create a mdel**.
+![download.jpg](attachment:download.jpg)
 
-For Phase 2, you will be creating a model that will **predict the prices of homes** sold in the Seattle, WA area. For this project there will be **3 deliverables**:
+***BUSINESS PROBLEM***  
 
-- a Github repo for this project
-- a notebook showing your final modeling process
-- a CSV file of your predictions on the holdout set
-	- name this file `housing_preds_your_name.csv` (replacing `your_name` with your name) and send via Slack
+The business problem is simple: how can we best predict the house prices contained within the holdout data set? 
 
-## Holdout predictions
+In order to tackle that problem, we were given access to the following information about just under 18,000 houses in the Kings County area:
 
-You will develop a model using `kc_house_data_train.csv`. Then you will use that model/process to predict on the `kc_house_data_holdout_features.csv`. 
+* **id** - unique ID for a house
+* **date** - Date day house was sold
+* **price** - Price is prediction target
+* **bedrooms** - Number of bedrooms
+* **bathrooms** - Number of bathrooms
+* **sqft_living** - square footage of the home
+* **sqft_lot** - square footage of the lot
+* **floors** - Total floors (levels) in house
+* **waterfront** - Whether house has a view to a waterfront
+* **view** - Number of times house has been viewed
+* **condition** - How good the condition is (overall)
+* **grade** - overall grade given to the housing unit, based on King County grading system
+* **sqft_above** - square footage of house (apart from basement)
+* **sqft_basement** - square footage of the basement
+* **yr_built** - Year when house was built
+* **yr_renovated** - Year when house was renovated
+* **zipcode** - zip code in which house is located
+* **lat** - Latitude coordinate
+* **long** - Longitude coordinate
+* **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
+* **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
-***Important note #1***: If you create a new feature with your training data, you will need to do the same thing with the test data before using the model to predict on the holdout data.  
+![download.png](attachment:download.png)
 
-After using your model to predict the holdout data, you will submit those predictions as a `.csv` file to the instructional staff. We will score the submitted predictions using the RMSE of those predictions.
+**REPOSITORY STRUCTURE**
 
-***Important note #2***: While we will score and rank each submission, your class rank will **not** have any direct impact on passing Phase 2. *The goal is to make sure you can actually produce predictions*.
+This repository is structured as follows: 
 
-So as long as you successfully **complete the modeling process** and can **explain the work you did**, you will be able to pass.  
+- archive: contains all the behind-the-scenes work of the final notebook. This is the place where I have placed all of my exloratory data analysis, my cleaning, and my model iterations.
+
+- data: contains the data on Kings Country houses that was used in the making of the final model. It also contains the holdout data set in which the final model is intended to blindly predict prices on as the holdout set does not contain a price column.
+
+- final_notebook: contains the polished and interactive version of my model where you can add features and take away features by commentings and uncommenting them out.
+
+- holdout_set: contains predictions on the holdout data set.
+
+- function.py: where all functions are contained for cleanliness purposes
+
+
+
 
 ## Final notebook
 
