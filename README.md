@@ -1,6 +1,6 @@
 # Kings County Housing Price Predictions
 
-![house_image.png](data/download.png)
+![house_image.png](data/downloads.png)
 
 ***BUSINESS PROBLEM***  
 
@@ -30,7 +30,7 @@ In order to tackle that problem, we were given access to the following informati
 * **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
 * **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
-![download.png](attachment:download.png)
+![correlation_image.png](data/download.png)
 
 **REPOSITORY STRUCTURE**
 
