@@ -1,6 +1,6 @@
 # Kings County Housing Price Predictions
 
-![download.png](data/downloads.png)
+![house_image.png](data/download.png)
 
 ***BUSINESS PROBLEM***  
 
